@@ -1,0 +1,814 @@
+* {
+  padding: 0;
+  margin: 0
+}
+
+body,
+html {
+  position: fixed;
+  overflow: hidden
+}
+
+body {
+  font-family: "Montserrat Regular"
+}
+
+@font-face {
+  font-family: "Dock11 Heavy";
+  src: url(../fonts/heavy_dock11.otf)
+}
+
+@font-face {
+  font-family: "Montserrat Regular";
+  src: url(../fonts/Montserrat-Regular.ttf)
+}
+
+@font-face {
+  font-family: "Nunito SemiBold";
+  src: url(../fonts/Nunito-SemiBold.ttf)
+}
+
+@font-face {
+  font-family: "Nunito ExtraBold";
+  src: url(../fonts/Nunito-ExtraBold.ttf)
+}
+
+@font-face {
+  font-family: "Nunito Bold";
+  src: url(../fonts/Nunito-Bold.ttf)
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(../fonts/Montserrat-Bold.ttf)
+}
+
+@font-face {
+  font-family: "Montserrat Black";
+  src: url(../fonts/Montserrat-Black.ttf)
+}
+
+.home-page {
+  background-image: url(../images/bg-main.jpg)
+}
+
+.bg-flex {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex
+}
+
+.home-page .leftSide .topMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 10
+}
+
+#fundrasing .logoTopMenu img,
+.home-page .leftSide .logoTopMenu img {
+  max-width: 70px;
+  z-index: 10
+}
+
+#fundrasing,
+.leftSide {
+  padding: 10px 10px;
+  z-index: 10
+}
+
+#fundrasing .navbar,
+.leftSide .navbar {
+  padding: 0
+}
+
+#fundrasing .navbar a img.logoTopMenu,
+.leftSide .navbar a img.logoTopMenu {
+  max-width: 65px
+}
+
+#fundrasing ul.nav,
+.leftSide ul.nav {
+  padding-left: 10px;
+  z-index: 10
+}
+
+#fundrasing ul.nav li a,
+.leftSide ul.nav li a {
+  margin: 8px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  line-height: 16px;
+  color: #747474;
+  transition: .3s ease-in-out;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  padding-bottom: 8px;
+  z-index: 10
+}
+
+#fundrasing .bottomMenu ul.nav li a:before,
+#fundrasing ul.nav li a:before,
+.leftSide ul.nav li a:before,
+.rightSide .bottomMenu ul.nav li a:before {
+  content: " ";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  transition: all .3s;
+  opacity: 0;
+  height: 3px;
+  width: 0;
+  background-color: #000;
+  color: #fff;
+  z-index: 10
+}
+
+#fundrasing ul.nav li,
+.leftSide ul.nav li {
+  display: inline-block;
+  list-style: none;
+  transition: background-color .3s;
+  z-index: 10
+}
+
+#fundrasing .bottomMenu ul.nav li:hover a:before,
+#fundrasing ul.nav li:hover a:before,
+.leftSide ul.nav li:hover a:before,
+.rightSide .bottomMenu ul.nav li:hover a:before {
+  width: 100%;
+  opacity: 1;
+  background-color: #a30ae9;
+  z-index: 10
+}
+
+#fundrasing .bottomMenu ul.nav li a.active:before,
+#fundrasing ul.nav li a.active:before,
+.leftSide ul.nav li a.active:before,
+.rightSide .bottomMenu ul.nav li a.active:before {
+  background-color: #e49523;
+  width: 100%;
+  opacity: 1;
+  z-index: 10
+}
+
+#fundrasing .bottomMenu ul.nav li a.active,
+#fundrasing ul.nav li a.active,
+.leftSide ul.nav li a.active,
+.rightSide .bottomMenu ul.nav li a.active {
+  color: #e49523;
+  z-index: 10
+}
+
+#fundrasing .bottomMenu ul.nav li:hover a,
+#fundrasing ul.nav li:hover a,
+.leftSide ul.nav li:hover a,
+.rightSide .bottomMenu ul.nav li:hover a {
+  color: #a30ae9;
+  z-index: 10
+}
+
+.leftSide .bigLogo img {
+  max-height: 60px;
+  margin: auto;
+  text-align: center
+}
+
+.leftSide .bigLogo {
+  padding: 10px 0;
+  text-align: center
+}
+
+.leftSide .row .imageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 10px 0
+}
+
+.leftSide .row .imageBox img {
+  max-width: 50px;
+  z-index: 10
+}
+
+.leftSide .row .imageBox .topIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.leftSide .row .imageBox .topIcon h2 span {
+  margin-left: 20px;
+  color: #97edf6
+}
+
+.leftSide .row .imageBox .topIcon h2 {
+  font-size: 20px;
+  font-family: "Dock11 Heavy";
+  position: relative;
+  font-weight: 700;
+  line-height: 20px;
+  padding-top: 24px;
+  margin-left: -16px;
+  z-index: 10;
+  color: #1ac1e4;
+  text-transform: uppercase
+}
+
+.leftSide .row .imageBox .topIcon h2 span.uniqueWord {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  margin: 0;
+  display: inline-block;
+  color: #fff !important
+}
+
+.leftSide .row .imageBox .topIcon.designBox h2 {
+  color: #4709d2
+}
+
+.leftSide .row .imageBox .topIcon.contentCreationBox h2,
+.leftSide .row .imageBox .topIcon.contentCreationBox h2 span {
+  color: #8ac426
+}
+
+.leftSide .row .imageBox .topIcon.financeBox h2 {
+  color: #de8b22
+}
+
+.leftSide .row .imageBox .topIcon.resiliencyBox h2 {
+  color: #6f2ca9
+}
+
+.leftSide .row .imageBox .topIcon.codingBox h2 {
+  color: #3a6075
+}
+
+.leftSide .row .imageBox h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 8px;
+  font-family: "Montserrat Bold";
+  color: #3b3a4d;
+  z-index: 10
+}
+
+.leftSide .row .imageBox h3 span {
+  margin-bottom: 5px;
+  display: inline-block;
+  z-index: 10
+}
+
+.leftSide .row .imageBox a.devShopLink {
+  color: #1ac1e4
+}
+
+.leftSide .row .imageBox a.designLink {
+  color: #8157e0
+}
+
+.leftSide .row .imageBox a.contentCreationLink {
+  color: #8ac326
+}
+
+.leftSide .row .imageBox a.financeLink {
+  color: #c57715
+}
+
+.leftSide .row .imageBox a.resiliencyLink {
+  color: #6126b3
+}
+
+.leftSide .row .imageBox a.codingLink {
+  color: #609eb3
+}
+
+.leftSide .row .imageBox a {
+  font-size: 12px;
+  text-decoration: none;
+  font-family: "Montserrat Regular";
+  font-weight: 700;
+  z-index: 10;
+  transition: .5s ease-in-out
+}
+
+.leftSide .row .imageBox a img {
+  max-width: 30px;
+  margin-left: 5px;
+  z-index: 10;
+  transition: .2s ease-in-out
+}
+
+.leftSide .row .imageBox a:hover img {
+  margin-left: 8px
+}
+
+.rightSide {
+  padding: 10px 10px;
+  z-index: 10
+}
+
+#fundrasing .donateLink,
+.rightSide .donateLink {
+  padding: 20px 30px;
+  height: 100%;
+  z-index: 10
+}
+
+#fundrasing .donateLink img,
+.rightSide .donateLink img {
+  max-width: 80px;
+  z-index: 10
+}
+
+.rightSide .heroHeading {
+  padding: 10px;
+  text-align: left;
+  z-index: 10
+}
+
+.rightSide .heroHeading h1 {
+  font-family: "Montserrat Black";
+  font-size: 39px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 44px;
+  z-index: 10
+}
+
+.rightSide .youthImage {
+  text-align: right;
+  z-index: 10
+}
+
+.rightSide .mentorImage img,
+.rightSide .youthImage img {
+  max-width: 55%;
+  z-index: 10
+}
+
+.rightSide .detailText {
+  font-family: "Nunito Bold";
+  padding: 0 40px;
+  z-index: 10
+}
+
+.rightSide .detailText h3 {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 0 0;
+  color: #fff;
+  z-index: 10
+}
+
+.rightSide .footerBottomLogo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 36px;
+  z-index: 10;
+  margin-top: 10px
+}
+
+.rightSide .footerBottomLogo .martyLogo,
+.rightSide .footerBottomLogo .mislaLogo {
+  padding: 0 20px;
+  z-index: 10
+}
+
+.rightSide .footerBottomLogo img {
+  max-width: 120px;
+  z-index: 10
+}
+
+#fundrasing .socialLinksIcons,
+.rightSide .socialLinksIcons {
+  position: relative;
+  z-index: 10
+}
+
+.rightSide .socialLinksIcons .socialList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 27px;
+  left: 45px;
+  z-index: 10
+}
+
+#fundrasing .socialLinksIcons .socialList li,
+.rightSide .socialLinksIcons .socialList li {
+  padding: 13px
+}
+
+#fundrasing .socialLinksIcons .socialList li a img,
+.rightSide .socialLinksIcons .socialList li a img {
+  max-width: 23px;
+  z-index: 10
+}
+
+#fundrasing .bottomMenu,
+.rightSide .bottomMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 0;
+  z-index: 10
+}
+
+#fundrasing .bottomMenu .bottomLogoDonate a img,
+.rightSide .bottomMenu .bottomLogoDonate a img {
+  max-width: 60px
+}
+
+#fundrasing .bottomMenu .bottomLogoDonate,
+.rightSide .bottomMenu .bottomLogoDonate {
+  margin-left: 30px
+}
+
+#fundrasing .bottomMenu ul.nav li a,
+.rightSide .bottomMenu ul.nav li a {
+  margin: 8px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Open Sans";
+  line-height: 16px;
+  color: #fff;
+  transition: .3s ease-in-out;
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  padding-bottom: 8px;
+  z-index: 10
+}
+
+.leftSide .middleImageBox {
+  position: relative
+}
+
+.leftSide .centerLogoMarty img {
+  position: absolute;
+  top: -90px;
+  max-width: 292px;
+  right: -164px;
+  z-index: 0
+}
+
+
+/* =====secoend page========== */
+
+.fundrasing-page {
+  background-image: url(../images/fundrasing-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center 295%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#fundrasing nav {
+  margin-left: 25px;
+}
+
+#fundrasing nav .col-lg-9 {
+  margin: 0;
+}
+
+#fundrasing .bigLogo img {
+  display: block;
+  margin-left: 35%;
+  margin-right: auto;
+  width: 50%
+}
+
+#fundrasing .circle-price img {
+  display: block;
+  margin-left: 29%;
+  margin-right: auto;
+  width: 62%
+}
+
+#fundrasing .circle-price p {
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Dock11 Heavy";
+  font-size: 90%
+}
+
+#fundrasing .circle-price .price {
+  font-family: "Nunito Bold";
+  font-size: 100%;
+  color: #3b3a4d;
+}
+
+#fundrasing .circle-price .c-text,
+#fundrasing .circle-price .f-text,
+#fundrasing .circle-price .m-text,
+#fundrasing .circle-price .r-text {
+  margin-top: 5.5%;
+}
+
+#fundrasing .circle-price .c-price,
+#fundrasing .circle-price .f-price,
+#fundrasing .circle-price .m-price,
+#fundrasing .circle-price .r-price {
+  margin-top: 7.3%;
+}
+
+#fundrasing .circle-price .b-text,
+#fundrasing .circle-price .d-text,
+#fundrasing .circle-price .me-text {
+  margin-top: 17%;
+}
+
+#fundrasing .circle-price .b-price,
+#fundrasing .circle-price .d-price,
+#fundrasing .circle-price .me-price {
+  margin-top: 18.8%;
+}
+
+#fundrasing .circle-price .r-text {
+  margin-left: 31.4%;
+  color: #6f2ca9;
+}
+
+#fundrasing .circle-price .m-text {
+  margin-left: 48.5%;
+  color: #7ba5f5;
+}
+
+#fundrasing .circle-price .c-text {
+  margin-left: 63.5%;
+  color: #3a6075;
+}
+
+#fundrasing .circle-price .f-text {
+  margin-left: 79.3%;
+  color: #de8b22;
+}
+
+#fundrasing .circle-price .b-text {
+  margin-left: 39%;
+  color: #4709d2;
+}
+
+#fundrasing .circle-price .me-text {
+  margin-left: 56.5%;
+  color: #1ac1e4;
+}
+
+#fundrasing .circle-price .d-text {
+  margin-left: 72%;
+  color: #de8b22;
+}
+
+#fundrasing .circle-price .r-price {
+  margin-left: 32.5%
+}
+
+#fundrasing .circle-price .m-price {
+  margin-left: 47.9%
+}
+
+#fundrasing .circle-price .c-price {
+  margin-left: 63.2%;
+}
+
+#fundrasing .circle-price .f-price {
+  margin-left: 79.3%;
+}
+
+#fundrasing .circle-price .b-price {
+  margin-left: 39.5%;
+}
+
+#fundrasing .circle-price .me-price {
+  margin-left: 55.3%;
+}
+
+#fundrasing .circle-price .d-price {
+  margin-left: 71.5%
+}
+
+#fundrasing .b-image,
+#fundrasing .c-image,
+#fundrasing .d-image,
+#fundrasing .f-image,
+#fundrasing .m-image,
+#fundrasing .me-image,
+#fundrasing .r-image {
+  position: absolute;
+}
+
+#fundrasing .circle-price .b-image,
+#fundrasing .circle-price .c-image,
+#fundrasing .circle-price .d-image,
+#fundrasing .circle-price .m-image,
+#fundrasing .circle-price .me-image,
+#fundrasing .circle-price .r-image {
+  width: 2%
+}
+
+#fundrasing .circle-price .r-image {
+  margin-top: 1%;
+  margin-left: 37.7%
+}
+
+#fundrasing .circle-price .c-image {
+  margin-top: 1.8%;
+  margin-left: 60.3%
+}
+
+#fundrasing .circle-price .m-image {
+  margin-top: 12.3%;
+  margin-left: 49.4%
+}
+
+#fundrasing .circle-price .b-image {
+  margin-top: 19.3%;
+  margin-left: 36.3%
+}
+
+#fundrasing .circle-price .me-image {
+  margin-top: 20%;
+  margin-left: 63%
+}
+
+#fundrasing .circle-price .d-image {
+  margin-top: 19.5%;
+  margin-left: 78.5%
+}
+
+#fundrasing .circle-price .f-image {
+  margin-top: 12.5%;
+  margin-left: 81.7%;
+  width: 1%
+}
+
+#fundrasing .socialLinksIcons .socialList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 45px;
+  z-index: 10
+}
+
+#fundrasing .mentorImage img,
+#fundrasing .youthImage img {
+  width: 40%;
+  margin-top: 0px;
+  margin-bottom: 200px;
+  padding: 0
+}
+
+#fundrasing .youthImage img {
+  margin-left: 50px
+}
+
+#fundrasing .mentorImage img {
+  margin-left: 20px
+}
+
+#fundrasing .mentorImage,
+#fundrasing .youthImage {
+  display: inline
+}
+
+#fundrasing .mislaLogo {
+  width: 53%;
+  margin-top: 175px;
+}
+
+#fundrasing .martyLogo {
+  position: absolute;
+  right: 90px;
+  width: 20%;
+}
+
+#fundrasing .bottomMenu {
+  margin-top: 60px;
+  margin-left:210px;
+}
+
+@media (max-width:991px) and (min-width:767px) {
+  .leftSide .centerLogoMarty img {
+    display: none
+  }
+}
+
+@media (max-width:991px) {
+  .home-page {
+    background-image: url(../images/mobile-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    min-height: 100vh
+  }
+
+  .navbar-light .navbar-toggler i {
+    color: #609eb3
+  }
+
+  .navbar-light .navbar-toggler,
+  .navbar-light .navbar-toggler:focus {
+    border: none;
+    outline: 0
+  }
+
+  .leftSide ul.nav {
+    padding: 15px 0 0 0;
+    flex-direction: column
+  }
+
+  .leftSide .bigLogo,
+  .rightSide .donateLink {
+    text-align: center
+  }
+}
+
+@media (max-width:767px) {
+  .rightSide .bottomMenu {
+    flex-direction: column
+  }
+
+  .leftSide .centerLogoMarty img {
+    position: absolute;
+    top: 0;
+    max-width: 250px;
+    z-index: 0;
+    left: -200px
+  }
+
+  .rightSide .footerBottomLogo img {
+    max-width: 100%
+  }
+}
+
+@media (max-width:575px) {
+  .leftSide .centerLogoMarty img {
+    top: 0;
+    right: 0;
+    max-width: 200px;
+    z-index: 0;
+    left: 50%;
+    margin-left: -70px
+  }
+
+  .rightSide .detailText {
+    padding: 0
+  }
+
+  .leftSide ul.nav li a {
+    color: #fff
+  }
+
+  .home-page {
+    background-image: url(../images/bg-main.jpg)
+  }
+
+  .rightSide .heroHeading,
+  .rightSide .socialLinksIcons,
+  .rightSide .youthImage {
+    text-align: center
+  }
+
+  .rightSide .socialLinksIcons .socialList {
+    justify-content: center;
+    top: 0;
+    position: relative;
+    flex-direction: row
+  }
+
+  .rightSide .bottomMenu ul.nav {
+    justify-content: center
+  }
+
+  .rightSide .bottomMenu .bottomLogoDonate {
+    margin-left: 0;
+    margin-top: 20px
+  }
+}
